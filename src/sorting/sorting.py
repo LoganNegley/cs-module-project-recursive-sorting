@@ -9,6 +9,14 @@ def merge(arrA, arrB):
     merged_index = 0
 
     while arrA_index < len(arrA) and arrB_index < len(arrB):
+        if arrA[arrA_index] < arrB[arrB_index]:
+            merged_arr[merged_index] = arrA[arrA_index]
+            merged_index += 1
+            arrA_index += 1
+        else: 
+            merged_arr[merged_index] = arrB[arrB_index]
+            merged_index += 1
+            arrB_index += 1
         
         return merged_arr
 
