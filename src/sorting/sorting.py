@@ -4,8 +4,13 @@ def merge(arrA, arrB):
     merged_arr = [0] * elements
 
     # Your code here
+    arrA_index = 0
+    arrB_index = 0
+    merged_index = 0
 
-    return merged_arr
+    while arrA_index < len(arrA) and arrB_index < len(arrB):
+        
+        return merged_arr
 
 # TO-DO: implement the Merge Sort function below recursively
 def merge_sort(arr):
