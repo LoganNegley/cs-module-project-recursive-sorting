@@ -18,7 +18,16 @@ def merge(arrA, arrB):
             merged_index += 1
             arrB_index += 1
         
-        return merged_arr
+    while arrA_index < len(arrA):
+        merged_arr[merged_index] = arrA[arrA_index]
+        merged_index += 1
+        arrA_index += 1
+    while arrB_index < len(arrB):
+        merged_arr[merged_index] = arrB[arrB_index]
+        merged_index += 1
+        arrB_index += 1
+        
+    return merged_arr
 
 # TO-DO: implement the Merge Sort function below recursively
 def merge_sort(arr):
